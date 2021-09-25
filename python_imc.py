@@ -1,8 +1,9 @@
 # CALCULADORA DE IMC
 
 nome = input('Olá! Qual o seu nome?')
-altura = float(input(f'{nome.capitalize()}, '
-'por favor digite sua altura em metros:'))
+altura_inserida = input(f'{nome.capitalize()}, '
+'por favor digite sua altura em metros:')
+altura = float(altura_inserida.replace(',','.'))
 peso = float(input('Digite o seu peso em Kg:'))
 
 calculo_imc = (peso / (altura * altura))
@@ -23,6 +24,3 @@ if (float(imc) > 35.0 and float(imc) < 39.9):
     print('Obesidade grau II, isso é severo!')
 if (float(imc) > 40.0 ):
     print('Obesidade grau III, isso é mórbido!')
-
-
-
