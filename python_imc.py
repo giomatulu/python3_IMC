@@ -6,9 +6,7 @@ altura = float(input(f'{nome.capitalize()}, '
 peso = float(input('Digite o seu peso em Kg:'))
 
 calculo_imc = (peso / (altura * altura))
-
 imc = '%.1f' % calculo_imc
-
 print(f'\nSeu imc é: {imc}')
 
 # abaixo confere se o peso está ideal
